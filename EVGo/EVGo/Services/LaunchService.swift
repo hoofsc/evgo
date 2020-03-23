@@ -18,7 +18,6 @@ internal class LaunchService: NSObject {
             var thisResult: APIResult<[Launch]>
             switch result {
             case .success(let graphQLResult):
-                print("Success! Result: \(graphQLResult)")
                 guard let launches = graphQLResult.data?.resultMap["launches"] as? [[String: Any]],
                       let launchesData = try? JSONSerialization.data(withJSONObject: launches, options: .fragmentsAllowed) else {
                         return

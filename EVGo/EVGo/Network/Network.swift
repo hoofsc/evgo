@@ -48,20 +48,20 @@ extension Network: HTTPNetworkTransportTaskCompletedDelegate {
                         withData data: Data?,
                         response: URLResponse?,
                         error: Error?) {
-        print("Raw task completed for request: \(request)")
+//        print("Raw task completed for request: \(request)")
                             
         if let error = error {
             print("Error: \(error)")
         }
 
-        if let response = response {
-            print("Response: \(response)")
+        if let _ = response {
+//            print("Response: \(response)")
         } else {
             print("No URL Response received!")
         }
 
-        if let data = data {
-            print("Data: \(String(describing: String(bytes: data, encoding: .utf8)))")
+        if let _ = data {
+//            print("Data: \(String(describing: String(bytes: data, encoding: .utf8)))")
         } else {
             print("No data received!")
         }
