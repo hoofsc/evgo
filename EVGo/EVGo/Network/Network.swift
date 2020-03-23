@@ -12,6 +12,7 @@ import Apollo
 // MARK: - Singleton Wrapper
 
 internal class Network {
+    
     static let shared = Network()
 
     // Configure the network transport to use the singleton as the delegate.
@@ -29,43 +30,42 @@ internal class Network {
 
 extension Network: HTTPNetworkTransportPreflightDelegate {
 
-  func networkTransport(_ networkTransport: HTTPNetworkTransport,
-                          shouldSend request: URLRequest) -> Bool {
-    // If there's an authenticated user, send the request. If not, don't.
-    return true
-  }
-  
-  func networkTransport(_ networkTransport: HTTPNetworkTransport,
-                        willSend request: inout URLRequest) {
-  }
+    func networkTransport(_ networkTransport: HTTPNetworkTransport, shouldSend request: URLRequest) -> Bool {
+        // If there's an authenticated user, send the request. If not, don't.
+        return true
+    }
+
+    func networkTransport(_ networkTransport: HTTPNetworkTransport, willSend request: inout URLRequest) {
+    
+    }
 }
 
 // MARK: - Task Completed Delegate
 
 extension Network: HTTPNetworkTransportTaskCompletedDelegate {
-  func networkTransport(_ networkTransport: HTTPNetworkTransport,
+    func networkTransport(_ networkTransport: HTTPNetworkTransport,
                         didCompleteRawTaskForRequest request: URLRequest,
                         withData data: Data?,
                         response: URLResponse?,
                         error: Error?) {
-    print("Raw task completed for request: \(request)")
-                        
-    if let error = error {
-      print("Error: \(error)")
+        print("Raw task completed for request: \(request)")
+                            
+        if let error = error {
+            print("Error: \(error)")
+        }
+
+        if let response = response {
+            print("Response: \(response)")
+        } else {
+            print("No URL Response received!")
+        }
+
+        if let data = data {
+            print("Data: \(String(describing: String(bytes: data, encoding: .utf8)))")
+        } else {
+            print("No data received!")
+        }
     }
-    
-    if let response = response {
-      print("Response: \(response)")
-    } else {
-      print("No URL Response received!")
-    }
-    
-    if let data = data {
-      print("Data: \(String(describing: String(bytes: data, encoding: .utf8)))")
-    } else {
-      print("No data received!")
-    }
-  }
 }
 
 // MARK: - Retry Delegate
@@ -77,7 +77,6 @@ extension Network: HTTPNetworkTransportRetryDelegate {
                             for request: URLRequest,
                             response: URLResponse?,
                             retryHandler: @escaping (_ shouldRetry: Bool) -> Void) {
-
         retryHandler(false)
     }
 }
