@@ -391,11 +391,11 @@
 		7C13275C24249ACE00387EC2 /* Search */ = {
 			isa = PBXGroup;
 			children = (
-				7C1326B42420357300387EC2 /* LaunchCell.swift */,
 				7C13275D24249AE300387EC2 /* SearchContext.swift */,
+				7C13276B2428A48800387EC2 /* SearchVC.swift */,
 				7C13276D2428A4EF00387EC2 /* SearchCV.swift */,
 				7C1327692428A3D800387EC2 /* SearchNVC.swift */,
-				7C13276B2428A48800387EC2 /* SearchVC.swift */,
+				7C1326B42420357300387EC2 /* LaunchCell.swift */,
 				7C13276F2428AE2800387EC2 /* Detail */,
 			);
 			path = Search;
@@ -425,8 +425,8 @@
 		7C13276F2428AE2800387EC2 /* Detail */ = {
 			isa = PBXGroup;
 			children = (
-				7C1327712428AEC600387EC2 /* DetailCV.swift */,
 				7C1326B624203C9500387EC2 /* DetailVC.swift */,
+				7C1327712428AEC600387EC2 /* DetailCV.swift */,
 				7C1327702428AE5E00387EC2 /* Youtube */,
 			);
 			path = Detail;
