@@ -30,17 +30,23 @@ internal class DetailCV: UIView {
     }()
     private(set) lazy var missionNameLabel: UILabel = {
         let lbl = UILabel()
-        lbl.font = UIFont.boldSystemFont(ofSize: 16.0)
+        lbl.font = UIFont.boldSystemFont(ofSize: 18.0)
+        lbl.numberOfLines = 0
+        lbl.lineBreakMode = .byWordWrapping
         lbl.translatesAutoresizingMaskIntoConstraints = false
         return lbl
     }()
     private(set) lazy var rocketNameLabel: UILabel = {
         let lbl = UILabel()
+        lbl.numberOfLines = 0
+        lbl.lineBreakMode = .byWordWrapping
         lbl.translatesAutoresizingMaskIntoConstraints = false
         return lbl
     }()
     private(set) lazy var launchDateLabel: UILabel = {
         let lbl = UILabel()
+        lbl.numberOfLines = 0
+        lbl.lineBreakMode = .byWordWrapping
         lbl.translatesAutoresizingMaskIntoConstraints = false
         return lbl
     }()
