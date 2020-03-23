@@ -96,6 +96,7 @@
 		7C13276C2428A48800387EC2 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C13276B2428A48800387EC2 /* SearchVC.swift */; };
 		7C13276E2428A4EF00387EC2 /* SearchCV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C13276D2428A4EF00387EC2 /* SearchCV.swift */; };
 		7C1327722428AEC600387EC2 /* DetailCV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C1327712428AEC600387EC2 /* DetailCV.swift */; };
+		7C1327732428E32300387EC2 /* Apollo.framework.dSYM in Resources */ = {isa = PBXBuildFile; fileRef = 7CE38E4C241B307400CBB7B0 /* Apollo.framework.dSYM */; };
 		7CC876CD241A307600466003 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC876CC241A307600466003 /* AppDelegate.swift */; };
 		7CC876D4241A307700466003 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CC876D3241A307700466003 /* Assets.xcassets */; };
 		7CC876D7241A307700466003 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CC876D5241A307700466003 /* LaunchScreen.storyboard */; };
@@ -105,7 +106,6 @@
 		7CC876FA241A34F500466003 /* LaunchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC876F9241A34F500466003 /* LaunchService.swift */; };
 		7CC876FC241A367200466003 /* APIResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC876FB241A367200466003 /* APIResult.swift */; };
 		7CC876FE241A36A500466003 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC876FD241A36A500466003 /* Network.swift */; };
-		7CE38E4D241B307400CBB7B0 /* Apollo.framework.dSYM in Resources */ = {isa = PBXBuildFile; fileRef = 7CE38E4C241B307400CBB7B0 /* Apollo.framework.dSYM */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -208,6 +208,7 @@
 		7C13276B2428A48800387EC2 /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
 		7C13276D2428A4EF00387EC2 /* SearchCV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCV.swift; sourceTree = "<group>"; };
 		7C1327712428AEC600387EC2 /* DetailCV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCV.swift; sourceTree = "<group>"; };
+		7C1327742428E50D00387EC2 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		7CC876C9241A307600466003 /* EVGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EVGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CC876CC241A307600466003 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7CC876D3241A307700466003 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -443,6 +444,7 @@
 		7CC876C0241A307600466003 = {
 			isa = PBXGroup;
 			children = (
+				7C1327742428E50D00387EC2 /* README.md */,
 				7CC87701241A3CCC00466003 /* Cartfile */,
 				7CC876CB241A307600466003 /* EVGo */,
 				7CC876E0241A307800466003 /* EVGoTests */,
@@ -619,7 +621,7 @@
 				7CC876D4241A307700466003 /* Assets.xcassets in Resources */,
 				7C1327192422C94E00387EC2 /* player.html in Resources */,
 				7C1326AF241F5BCA00387EC2 /* Launch.graphql in Resources */,
-				7CE38E4D241B307400CBB7B0 /* Apollo.framework.dSYM in Resources */,
+				7C1327732428E32300387EC2 /* Apollo.framework.dSYM in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

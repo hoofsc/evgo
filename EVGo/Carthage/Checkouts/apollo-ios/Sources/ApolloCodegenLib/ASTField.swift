@@ -1,10 +1,10 @@
 import Foundation
 
 /// A field with data on any item.
-class ASTField: Codable {
+struct ASTField: Codable, Equatable {
   
   /// An argument which can be passed along with a field
-  class Argument: Codable {
+  struct Argument: Codable, Equatable {
     /// The name of the argument
     let name: String
     
@@ -26,6 +26,9 @@ class ASTField: Codable {
   
   /// If this field is conditional
   let isConditional: Bool
+  
+  /// [optional] Any conditions on this field
+  let conditions: [ASTCondition]?
   
   /// [optional] Any description of this field
   let description: String?
